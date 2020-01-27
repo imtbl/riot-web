@@ -456,6 +456,52 @@ async function verifyServerConfig() {
             discoveryResult = await AutoDiscovery.findClientConfig(serverName);
         }
 
+        const emotes = []
+
+        const accessKeyQueryParam = config['emoteServerAccessKey']
+            ? `?accessKey=${encodeURIComponent(config['emoteServerAccessKey'])}`
+            : ''
+
+        if (config['emoteServerUrl']) {
+            let emotesResponse;
+
+            try {
+                emotesResponse = await fetch(
+                    `${config['emoteServerUrl']}/emotes${accessKeyQueryParam}`
+                );
+                emotesResponse = await emotesResponse.json();
+            } catch (err) {
+                console.error(err);
+            }
+
+            if (emotesResponse) {
+                for (const emote of emotesResponse.emotes) {
+                    let index = 1;
+
+                    while (
+                        emotes.find(existingEmote => existingEmote.name === `:${emote.name}:`)
+                    ) {
+                        emote.name = `${emote.name}~${index}`
+
+                        index++;
+                    }
+
+                    emote.name = `:${emote.name}:`;
+                    emote.url += accessKeyQueryParam
+
+                    emotes.push(emote);
+                }
+            }
+        }
+
+        SdkConfig.add({ customEmotes: emotes });
+        SdkConfig.add(
+            { defaultEmoteSize: config['defaultEmoteSize'] || '2em'}
+        );
+        SdkConfig.add(
+            { largeEmoteSize: config['largeEmoteSize'] || '4em'}
+        );
+
         validatedConfig = AutoDiscoveryUtils.buildValidatedConfigFromDiscovery(serverName, discoveryResult, true);
     } catch (e) {
         const {hsUrl, isUrl, userId} = Lifecycle.getLocalStorageSessionVars();

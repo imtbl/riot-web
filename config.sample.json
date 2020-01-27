@@ -52,5 +52,9 @@
     },
     "settingDefaults": {
         "breadcrumbs": true
-    }
+    },
+    "emoteServerUrl": "",
+    "emoteServerAccessKey": "",
+    "defaultEmoteSize": "2em",
+    "largeEmoteSize": "4em"
 }
