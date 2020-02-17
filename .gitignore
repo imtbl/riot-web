@@ -21,3 +21,9 @@ electron/pub
 /config.local*.json
 /src/component-index.js
 /.tmp
+/pkg
+/riot-desktop-fork-git
+/src/riot-desktop-fork-git
+/src/riot-desktop.desktop
+/src/riot-desktop.sh
+/*.pkg.tar.xz
