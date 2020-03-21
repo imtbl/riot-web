@@ -7522,7 +7522,7 @@ matrix-mock-request@^1.2.3:
 
 "matrix-react-sdk@github:mserajnik/matrix-react-sdk":
   version "2.2.3"
-  resolved "https://codeload.github.com/mserajnik/matrix-react-sdk/tar.gz/5fa8eb4ee7f65abb7d498be355e4902f988f202d"
+  resolved "https://codeload.github.com/mserajnik/matrix-react-sdk/tar.gz/27c947d710de4254801fbf0b5e1ae6be2b868742"
   dependencies:
     "@babel/runtime" "^7.8.3"
     blueimp-canvas-to-blob "^3.5.0"
