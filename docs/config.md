@@ -84,6 +84,10 @@ For a good example, see https://riot.im/develop/config.json.
    By default, this is "https://matrix.to" to generate matrix.to (spec) permalinks.
    Set this to your Riot instance URL if you run an unfederated server (eg:
    "https://riot.example.org").
+1. `jitsi`: Used to change the default conference options.
+    1. `preferredDomain`: The domain name of the preferred Jitsi instance. Defaults
+       to `jitsi.riot.im`. This is used whenever a user clicks on the voice/video
+       call buttons - integration managers may use a different domain.
 
 Note that `index.html` also has an og:image meta tag that is set to an image
 hosted on riot.im. This is the image used if links to your copy of Riot

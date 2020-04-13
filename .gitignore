@@ -21,6 +21,7 @@ electron/pub
 /config.local*.json
 /src/component-index.js
 /.tmp
+/webpack-stats.json
 /pkg
 /riot-desktop-fork-git
 /src/riot-desktop-fork-git
