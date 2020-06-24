@@ -1,5 +1,5 @@
-# Maintainer: Michael Serajnik <ms dot mserajnik dot at>
-pkgver=v1.5.7.r943.gd47edea3
+# Maintainer: imtbl <imtbl at mser dot at>
+pkgver=v1.5.7.r1002.g04a76a61
 pkgrel=1
 pkgname=riot-desktop-fork-git
 _pkgname=riot-web-fork-git
@@ -12,14 +12,14 @@ makedepends=('git' 'nodejs' 'jq' 'yarn' 'npm' 'python' 'rust' 'moreutils')
 conflicts=('riot-desktop' 'riot-desktop-git' 'riot-web')
 provides=('riot-desktop')
 backup=("etc/riot/config.json")
-source=('riot-web-fork-git::git://github.com/mserajnik/riot-web.git'
-        'riot-desktop::git://github.com/vector-im/riot-desktop.git#tag=v1.6.4'
+source=('riot-web-fork-git::git://github.com/imtbl/riot-web.git'
+        'riot-desktop::git://github.com/vector-im/riot-desktop.git#tag=v1.6.6'
         'riot-desktop.desktop'
         'riot-desktop.sh')
-md5sums=('SKIP'
-         'SKIP'
-         'SKIP'
-         'SKIP')
+sha256sums=('SKIP'
+            'SKIP'
+            'b94e5d51831cf57729c96e716cdda3a034a1dda7a0f9e2e6fbd040be2c862604'
+            'a6cc599b226357a6e219d17b29834aa34b993029c5c83e46402117f10fa4f91e')
 
 pkgver() {
   cd "$srcdir/${_pkgname}"

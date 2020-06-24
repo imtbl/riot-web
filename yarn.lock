@@ -7020,9 +7020,9 @@ matrix-mock-request@^1.2.3:
     bluebird "^3.5.0"
     expect "^1.20.2"
 
-"matrix-react-sdk@github:mserajnik/matrix-react-sdk":
+"matrix-react-sdk@github:imtbl/matrix-react-sdk":
   version "2.8.0"
-  resolved "https://codeload.github.com/mserajnik/matrix-react-sdk/tar.gz/bf985fe52e7fa085d607cace4b3a7a778ebb4bc0"
+  resolved "https://codeload.github.com/imtbl/matrix-react-sdk/tar.gz/bf985fe52e7fa085d607cace4b3a7a778ebb4bc0"
   dependencies:
     "@babel/runtime" "^7.8.3"
     await-lock "^2.0.1"
