@@ -20,8 +20,12 @@ electron/pub
 /.tmp
 /webpack-stats.json
 /pkg
+/riot-desktop
 /riot-desktop-fork-git
-/src/riot-desktop-fork-git
+/src/npm-cache
+/src/riot-desktop
 /src/riot-desktop.desktop
 /src/riot-desktop.sh
+/src/riot-web-fork-git
+/riot-web-fork-git
 /*.pkg.tar.xz
