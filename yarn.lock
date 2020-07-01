@@ -7021,8 +7021,8 @@ matrix-mock-request@^1.2.3:
     expect "^1.20.2"
 
 "matrix-react-sdk@github:imtbl/matrix-react-sdk":
-  version "2.8.0"
-  resolved "https://codeload.github.com/imtbl/matrix-react-sdk/tar.gz/ee3c155da33bbe4d20cef69fcb83a37e46baf4b3"
+  version "2.8.1"
+  resolved "https://codeload.github.com/imtbl/matrix-react-sdk/tar.gz/e82de7552158d0fbd42c53208636ca6040106ad4"
   dependencies:
     "@babel/runtime" "^7.8.3"
     await-lock "^2.0.1"
