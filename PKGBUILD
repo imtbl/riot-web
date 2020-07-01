@@ -1,9 +1,9 @@
 # Maintainer: imtbl <imtbl at mser dot at>
-pkgver=v1.5.7.r1002.g04a76a61
+pkgver=1.6.7.fork.r0.gad8a29bd
 pkgrel=1
 pkgname=riot-desktop-fork-git
 _pkgname=riot-web-fork-git
-pkgdesc="A glossy Matrix collaboration client for the desktop."
+pkgdesc="A glossy Matrix collaboration client for the desktop with added custom emote support."
 arch=('any')
 url="https://riot.im"
 license=('Apache')
@@ -13,7 +13,7 @@ conflicts=('riot-desktop' 'riot-desktop-git' 'riot-web')
 provides=('riot-desktop')
 backup=("etc/riot/config.json")
 source=('riot-web-fork-git::git://github.com/imtbl/riot-web.git'
-        'riot-desktop::git://github.com/vector-im/riot-desktop.git#tag=v1.6.6'
+        'riot-desktop::git://github.com/vector-im/riot-desktop.git#tag=v1.6.7'
         'riot-desktop.desktop'
         'riot-desktop.sh')
 sha256sums=('SKIP'
@@ -24,10 +24,7 @@ sha256sums=('SKIP'
 pkgver() {
   cd "$srcdir/${_pkgname}"
 
-  ( set -o pipefail
-    git describe --long 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' ||
-    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-  )
+  git describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 prepare() {
