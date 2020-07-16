@@ -22,7 +22,7 @@ electron/pub
 /pkg
 /riot-desktop
 /riot-desktop-fork-git
-/src/npm-cache
+/src/yarn-cache
 /src/riot-desktop
 /src/riot-desktop.desktop
 /src/riot-desktop.sh
