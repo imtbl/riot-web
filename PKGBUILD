@@ -1,5 +1,5 @@
 # Maintainer: imtbl <imtbl at mser dot at>
-pkgver=1.7.3.fork
+pkgver=1.7.3.fork1
 pkgrel=1
 pkgname=element-desktop-fork-git
 _pkgname=element-web-fork-git

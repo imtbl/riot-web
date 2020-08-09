@@ -7213,10 +7213,10 @@ matrix-mock-request@^1.2.3:
     bluebird "^3.5.0"
     expect "^1.20.2"
 
-"matrix-react-sdk@npm:@mtbl/matrix-react-sdk@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@mtbl/matrix-react-sdk/-/matrix-react-sdk-3.1.0.tgz#266070b8b36f1e9ae4adab67dd1a23f3810b789a"
-  integrity sha512-bpS5eakXa0oDWtHNAsOsjQE3qE9ewg1VmmkfSZjfGJVVH58Qu5fJp0jVon3EaQFqpfq8qNUUcr2KD0Pi5qyo1w==
+"matrix-react-sdk@npm:@mtbl/matrix-react-sdk@3.1.0-fork1":
+  version "3.1.0-fork1"
+  resolved "https://registry.yarnpkg.com/@mtbl/matrix-react-sdk/-/matrix-react-sdk-3.1.0-fork1.tgz#0f1185547df417b457f3689639ff226903ef892c"
+  integrity sha512-HNItepkFnpIyN+wZe6Czk/KNn/Qk7WpWS/9pvG+/8unOheEk3lFNBcOUTZ+BJiFDz+IKjlbBTSSloY1BSQkeqg==
   dependencies:
     "@babel/runtime" "^7.10.5"
     await-lock "^2.0.1"
@@ -8028,9 +8028,9 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
     wrappy "1"
 
 onetime@^5.1.0:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/onetime/-/onetime-5.1.1.tgz#5c8016847b0d67fcedb7eef254751cfcdc7e9418"
-  integrity sha512-ZpZpjcJeugQfWsfyQlshVoowIIQ1qBGSVll4rfDq6JJVO//fesjoX808hXWfBjY+ROZgpKDI5TRSRBSoJiZ8eg==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/onetime/-/onetime-5.1.2.tgz#d0e96ebb56b07476df1dd9c4806e5237985ca45e"
+  integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
   dependencies:
     mimic-fn "^2.1.0"
 
