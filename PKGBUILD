@@ -11,7 +11,7 @@ depends=('electron')
 makedepends=('git' 'nodejs' 'jq' 'yarn' 'npm' 'python' 'rust' 'sqlcipher' 'electron' 'moreutils')
 conflicts=('element-desktop' 'element-desktop-git' 'element-web' 'riot-desktop-fork-git')
 provides=('element-desktop')
-backup=("etc/riot/config.json")
+backup=("etc/element/config.json")
 source=('element-web-fork-git::git://github.com/imtbl/element-web.git'
         'element-desktop::git://github.com/vector-im/element-desktop.git#tag=v1.7.3'
         'element-desktop.desktop'
