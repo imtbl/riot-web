@@ -1,5 +1,5 @@
 # Maintainer: imtbl <imtbl at mser dot at>
-pkgver=1.7.3.fork1
+pkgver=1.7.4.fork1
 pkgrel=1
 pkgname=element-desktop-fork-git
 _pkgname=element-web-fork-git
@@ -7,13 +7,13 @@ pkgdesc="A glossy Matrix collaboration client for the desktop with added custom 
 arch=('x86_64')
 url="https://element.io"
 license=('Apache')
-depends=('electron')
-makedepends=('git' 'nodejs' 'jq' 'yarn' 'npm' 'python' 'rust' 'sqlcipher' 'electron' 'moreutils')
+depends=('electron' 'sqlcipher')
+makedepends=('git' 'nodejs' 'jq' 'yarn' 'npm' 'python' 'rust' 'electron' 'moreutils')
 conflicts=('element-desktop' 'element-desktop-git' 'element-web' 'riot-desktop-fork-git')
 provides=('element-desktop')
 backup=("etc/element/config.json")
 source=('element-web-fork-git::git://github.com/imtbl/element-web.git'
-        'element-desktop::git://github.com/vector-im/element-desktop.git#tag=v1.7.3'
+        'element-desktop::git://github.com/vector-im/element-desktop.git#tag=v1.7.4'
         'element-desktop.desktop'
         'element-desktop.sh')
 sha256sums=('SKIP'
