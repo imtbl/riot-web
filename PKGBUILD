@@ -13,7 +13,7 @@ conflicts=('element-desktop' 'element-desktop-git' 'element-web' 'riot-desktop-f
 provides=('element-desktop')
 backup=("etc/element/config.json")
 source=('element-web-fork-git::git://github.com/imtbl/element-web.git'
-        'element-desktop::git://github.com/vector-im/element-desktop.git#tag=v1.7.7'
+        'element-desktop::git://github.com/vector-im/element-desktop.git#commit=161b024bf2f297f8ca0d1660fa107c49c28eff68'
         'element-desktop.desktop'
         'element-desktop.sh')
 sha256sums=('SKIP'
