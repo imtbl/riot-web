@@ -1,5 +1,5 @@
 # Maintainer: imtbl <imtbl at mser dot at>
-pkgver=1.7.8.fork1
+pkgver=1.7.10.fork1
 pkgrel=1
 pkgname=element-desktop-fork-git
 _pkgname=element-web-fork-git
@@ -13,7 +13,7 @@ conflicts=('element-desktop' 'element-desktop-git' 'element-web' 'riot-desktop-f
 provides=('element-desktop')
 backup=("etc/element/config.json")
 source=('element-web-fork-git::git://github.com/imtbl/element-web.git'
-        'element-desktop::git://github.com/vector-im/element-desktop.git#tag=v1.7.8'
+        'element-desktop::git://github.com/vector-im/element-desktop.git#tag=v1.7.10'
         'element-desktop.desktop'
         'element-desktop.sh')
 sha256sums=('SKIP'
