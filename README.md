@@ -129,14 +129,14 @@ Running from Docker
 The Docker image can be used to serve element-web as a web server. The easiest way to use
 it is to use the prebuilt image:
 ```bash
-docker run -p 80:80 vectorim/riot-web
+docker run -p 80:80 vectorim/element-web
 ```
 
 To supply your own custom `config.json`, map a volume to `/app/config.json`. For example,
 if your custom config was located at `/etc/element-web/config.json` then your Docker command
 would be:
 ```bash
-docker run -p 80:80 -v /etc/element-web/config.json:/app/config.json vectorim/riot-web
+docker run -p 80:80 -v /etc/element-web/config.json:/app/config.json vectorim/element-web
 ```
 
 To build the image yourself:
@@ -333,7 +333,7 @@ To add a new translation, head to the [translating doc](docs/translating.md).
 
 For a developer guide, see the [translating dev doc](docs/translating-dev.md).
 
-[<img src="https://translate.riot.im/widgets/element-web/-/multi-auto.svg" alt="translationsstatus" width="340">](https://translate.riot.im/engage/element-web/?utm_source=widget)
+[<img src="https://translate.element.io/widgets/element-web/-/multi-auto.svg" alt="translationsstatus" width="340">](https://translate.element.io/engage/element-web/?utm_source=widget)
 
 Triaging issues
 ===============
