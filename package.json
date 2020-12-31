@@ -1,6 +1,6 @@
 {
   "name": "element-web",
-  "version": "1.7.16-fork1",
+  "version": "1.7.16-fork3",
   "description": "A feature-rich client for Matrix.org",
   "author": "New Vector Ltd.",
   "repository": {
@@ -61,7 +61,7 @@
     "jsrsasign": "^9.1.5",
     "katex": "^0.12.0",
     "matrix-js-sdk": "9.4.1",
-    "matrix-react-sdk": "npm:@mtbl/matrix-react-sdk@3.11.1-fork1",
+    "matrix-react-sdk": "npm:@mtbl/matrix-react-sdk@3.11.1-fork12",
     "matrix-widget-api": "^0.1.0-beta.10",
     "olm": "https://packages.matrix.org/npm/olm/olm-3.2.1.tgz",
     "prop-types": "^15.7.2",
